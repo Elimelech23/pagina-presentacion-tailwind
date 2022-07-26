@@ -12,77 +12,77 @@
 </head>
 
 <body id="body" class="box-border bg-black">
-    <nav class="bg-black/20 py-5 flex flex-col justify-center items-center gap-3 lg:flex-row lg:justify-between lg:px-10 lg:sticky lg:top-0 ">
+    <nav id="nav" class="text-white bg-black/20 py-5 flex flex-col justify-center items-center gap-3 lg:flex-row lg:justify-between lg:px-10 lg:sticky lg:top-0 ">
         <div>
             <img src="images/logo.png" class="w-44">
         </div>
-        <div class="text-white font-bold flex gap-10 items-center">
+        <div class=" font-bold flex gap-10 items-center">
             <a href="#d-inicio"><button>Inicio</button></a>
             <a href="#d-habilidades"><button>Habilidades</button></a>
             <a href="#d-proyectos"><button>Mis Proyectos</button></a>
-            <button onclick="claro()"><img src="images/oscuro-claro.png" class="w-5 lg:w-10"></button>
+            <button onclick="OscuroClaro()"><img src="images/oscuro-claro.png" class="w-5 lg:w-10"></button>
         </div>
     </nav>
     <main id="d-inicio" class="bg-black/100 h-auto space-y-5 m-0 lg:flex lg:justify-center lg:items-start lg:flex-wrap">
         <div class="flex justify-center items-center lg:w-1/2 lg:h-screen">
             <img src="images/personaje-feed.png" class="animate-pulse p-1 pt-0 sm:w-3/4 lg:pt-0 lg:w-11/12">
         </div>
-        <div class="flex flex-col justify-center items-center text-white font-bold gap-5 lg:w-1/2 lg:h-screen">
+        <div id="titulop" class="flex flex-col justify-center items-center text-white font-bold gap-5 lg:w-1/2 lg:h-screen">
             <p class="text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Elimelech Attale</p>
             <p class="text-2xl lg:text-3xl">Estudiante de Desarrollo Web</p>
-            <a href=""><button class="bg-sky-600 px-5 py-2 rounded-xl lg:text-2xl lg:px-10">Ver GitHub</button></a>
+            <a href=""><button class="text-white bg-sky-600 px-5 py-2 rounded-xl lg:text-2xl lg:px-10">Ver GitHub</button></a>
         </div>
         <div class="flex justify-center items-center pt-10 sm:pt-1 lg:hidden ">
             <img src="images/swipeup.png" class="w-20">
         </div>
     </main>
-    <section id="d-habilidades" class="bg-gray-900 h-auto pb-20">
+    <section id="d-habilidades" class="bg-gray-900 h-auto pb-20 text-white">
         <div class="flex justify-center p-5 pb-20">
-            <p class="text-white font-bold text-3xl">Habilidades</p>
+            <p class="font-bold text-3xl">Habilidades</p>
         </div>
-        <div class="text-white font-bold flex flex-wrap justify-center gap-10">
+        <div class="font-bold flex flex-wrap justify-center gap-10">
             <div class="w-30 h-30 space-y-6 flex flex-col items-center sm:w-60 lg:w-96">
                 <img src="images/logo-html.png" class="w-36">
-                <div class="progreso">
+                <div id="b-progress" class="progreso">
                     <div class="progreso1"></div>
                 </div>
                 <p>HTML</p>
             </div>
             <div class="w-30 h-30 space-y-6 flex flex-col items-center sm:w-60 lg:w-96">
                 <img src="images/logo-css.png" class="w-36">
-                <div class="progreso">
+                <div id="b-progress2" class="progreso">
                     <div class="progreso2"></div>
                 </div>
                 <p>CSS</p>
             </div>
             <div class="w-30 h-30 space-y-6 flex flex-col items-center sm:w-60 lg:w-96">
                 <img src="images/logo-sass.png" class="w-36">
-                <div class="progreso">
+                <div id="b-progress3" class="progreso">
                     <div class="progreso3"></div>
                 </div>
                 <p>SASS</p>
             </div>
             <div class="w-30 h-30 space-y-6 flex flex-col items-center sm:w-60 lg:w-96">
                 <img src="images/logo-github.png" class="w-36">
-                <div class="progreso">
+                <div id="b-progress4" class="progreso">
                     <div class="progreso4 "></div>
                 </div>
                 <p>GitHub</p>
             </div>
             <div class="w-30 h-30 space-y-6 flex flex-col items-center sm:w-60 lg:w-96">
                 <img src="images/logo-js.png" class="w-36">
-                <div class="progreso">
+                <div id="b-progress5" class="progreso">
                     <div class="progreso5"></div>
                 </div>
                 <p>JavaScript</p>
             </div>
         </div>
     </section>
-    <section id="d-proyectos" class="h-auto bg-gray-700 flex-wrap pb-20">
+    <section id="d-proyectos" class="h-auto bg-gray-700 flex-wrap pb-20 text-white">
         <div class="flex justify-center items-center p-5 pb-20">
-            <p class="font-bold text-white text-3xl">Mis Proyectos</p>
+            <p class="font-bold text-3xl">Mis Proyectos</p>
         </div>
-        <div class="text-white font-bold flex flex-wrap justify-center gap-16">
+        <div class="font-bold flex flex-wrap justify-center gap-16">
             <div class="w-full h-30 space-y-6 flex flex-col items-center lg:w-1/3">
                 <p class="text-2xl">YouTube</p>
                 <p>Replica de Youtube con Html y Css</p>
