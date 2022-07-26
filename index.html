@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/estilosgenerales.css">
 </head>
 
-<body class="box-border bg-black">
+<body id="body" class="box-border bg-black">
     <nav class="bg-black/20 py-5 flex flex-col justify-center items-center gap-3 lg:flex-row lg:justify-between lg:px-10 lg:sticky lg:top-0 ">
         <div>
             <img src="images/logo.png" class="w-44">
@@ -20,7 +20,7 @@
             <a href="#d-inicio"><button>Inicio</button></a>
             <a href="#d-habilidades"><button>Habilidades</button></a>
             <a href="#d-proyectos"><button>Mis Proyectos</button></a>
-            <button><img src="images/oscuro-claro.png" class="w-5 lg:w-10"></button>
+            <button onclick="claro()"><img src="images/oscuro-claro.png" class="w-5 lg:w-10"></button>
         </div>
     </nav>
     <main id="d-inicio" class="bg-black/100 h-auto space-y-5 m-0 lg:flex lg:justify-center lg:items-start lg:flex-wrap">
@@ -105,7 +105,7 @@
             </div>
         </div> 
     </section>
-
+<script src="script/app.js"></script>
 </body>
 
 </html>
