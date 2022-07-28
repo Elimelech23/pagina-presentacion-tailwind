@@ -9,10 +9,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/barra-progreso/barra-progreso.css">
     <link rel="stylesheet" href="css/estilosgenerales.css">
+    <link rel="stylesheet" href="css/css-adicionales/adicionales.css">
 </head>
 
-<body id="body" class="box-border bg-black">
-    <nav id="nav" class="text-white bg-black/20 py-5 flex flex-col justify-center items-center gap-3 lg:flex-row lg:justify-between lg:px-10 lg:sticky lg:top-0 ">
+<body id="body" class="box-border bg-gray-900">
+    <nav id="nav" class="z-10 text-white bg-black/20 py-5 flex flex-col justify-center items-center gap-3 lg:flex-row lg:justify-between lg:px-10 lg:sticky lg:top-0 ">
         <div>
             <img src="images/logo.png" class="w-44">
         </div>
@@ -23,19 +24,20 @@
             <button onclick="OscuroClaro()"><img src="images/oscuro-claro.png" class="w-5 lg:w-10"></button>
         </div>
     </nav>
-    <main id="d-inicio" class="bg-black/100 h-auto space-y-5 m-0 lg:flex lg:justify-center lg:items-start lg:flex-wrap">
+    <main id="d-inicio" class="bg-gray h-auto space-y-5 m-0 lg:flex lg:justify-center lg:items-start lg:flex-wrap">
         <div class="flex justify-center items-center lg:w-1/2 lg:h-screen">
             <img src="images/personaje-feed.png" class="animate-pulse p-1 pt-0 sm:w-3/4 lg:pt-0 lg:w-11/12">
         </div>
         <div id="titulop" class="flex flex-col justify-center items-center text-white font-bold gap-5 lg:w-1/2 lg:h-screen">
             <p class="text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">Elimelech Attale</p>
             <p class="text-2xl lg:text-3xl">Estudiante de Desarrollo Web</p>
-            <a href=""><button class="text-white bg-sky-600 px-5 py-2 rounded-xl lg:text-2xl lg:px-10">Ver GitHub</button></a>
+            <a href="https://github.com/Elimelech23" target="_blank"><button class="text-white bg-sky-600 px-5 py-2 rounded-xl lg:text-2xl lg:px-10">Ver GitHub</button></a>
         </div>
         <div class="flex justify-center items-center pt-10 sm:pt-1 lg:hidden ">
             <img src="images/swipeup.png" class="w-20">
         </div>
     </main>
+    <hr class="text-center m-16 opacity-20 rounded-xl">
     <section id="d-habilidades" class="bg-gray-900 h-auto pb-20 text-white">
         <div class="flex justify-center p-5 pb-20">
             <p class="font-bold text-3xl">Habilidades</p>
@@ -78,30 +80,31 @@
             </div>
         </div>
     </section>
-    <section id="d-proyectos" class="h-auto bg-gray-700 flex-wrap pb-20 text-white">
+    <hr class="text-center m-16 opacity-20 rounded-xl">
+    <section id="d-proyectos" class="h-auto bg-gray-900 flex-wrap pb-20 text-white">
         <div class="flex justify-center items-center p-5 pb-20">
             <p class="font-bold text-3xl">Mis Proyectos</p>
         </div>
         <div class="font-bold flex flex-wrap justify-center gap-16">
-            <div class="w-full h-30 space-y-6 flex flex-col items-center lg:w-1/3">
-                <p class="text-2xl">YouTube</p>
+            <div class="p-youtube w-full h-30 space-y-6 flex flex-col items-center lg:w-1/3">
+                <p class="text-4xl text-center">YouTube</p>
                 <p>Replica de Youtube con Html y Css</p>
-                <img src="images/youtube-fake.jpeg" class="w-96 2xl:w-full" >
+                <a href="https://elimelech23.github.io/Youtube-fake/" target="_blank"><img src="images/youtube-fake.jpeg" class="youtubeimg w-96 2xl:w-full rounded-xl drop-shadow-xl"></a>
             </div>
-            <div class="w-full h-30 space-y-6 flex flex-col items-center lg:w-1/3">
-                <p class="text-2xl">Ferrari</p>
+            <div class="p-ferrari w-full h-30 space-y-6 flex flex-col items-center lg:w-1/3">
+                <p class="text-4xl text-center">Ferrari</p>
                 <p>Replica de la pagina de Ferrari con Html y Css</p>
-                <img src="images/ferrari.png" class="w-96 2xl:w-full">
+                <a href=""><img src="images/ferrari.png" class="ferrarimg w-96 2xl:w-full rounded-xl drop-shadow-xl"></a>
             </div>
-            <div class="w-full h-30 space-y-6 flex flex-col items-center lg:w-1/3">
-                <p class="text-2xl">Amazon</p>
+            <div class="p-amazon w-full h-30 space-y-6 flex flex-col items-center lg:w-1/3">
+                <p class="text-4xl">Amazon</p>
                 <p>Replica de Amazon con Html y SASS</p>
-                <img src="images/amazon.png" class="w-96 2xl:w-full">
+                <a href="https://elimelech23.github.io/Amazon-fake-SASS/" target="_blank"><img src="images/amazon.png" class="amazonimg w-96 2xl:w-full rounded-xl drop-shadow-xl"></a>
             </div>
-            <div class="w-full h-30 space-y-6 flex flex-col items-center lg:w-1/3">
-                <p class="text-2xl">Adivina el Numero</p>
+            <div class="p-anumero w-full h-30 space-y-6 flex flex-col items-center lg:w-1/3">
+                <p class="text-4xl">Adivina el Numero</p>
                 <p>Juego creado con JavaScript</p>
-                <img src="images/adivina.png" class="w-96 2xl:w-full">
+                <a href="https://elimelech23.github.io/juego-adivina-numero-javascript/" target="_blank"><img src="images/adivina.png" class="numeroimg w-96 2xl:w-full rounded-xl drop-shadow-xl"></a>
             </div>
         </div> 
     </section>
