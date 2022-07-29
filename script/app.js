@@ -1,9 +1,9 @@
 function OscuroClaro(){
-    document.body.classList.toggle("bg-gray-300")
+    document.body.classList.toggle("bg-gray-200")
     document.getElementById("nav").classList.toggle("bg-gray-300/90")
     document.getElementById("nav").classList.toggle("text-black")
 
-    document.getElementById("d-inicio").classList.toggle("bg-gray-300")
+    document.getElementById("d-inicio").classList.toggle("bg-gray-200")
     document.getElementById("titulop").classList.toggle("text-black")
 
     document.getElementById("d-habilidades").classList.toggle("bg-gray-200")
@@ -14,6 +14,9 @@ function OscuroClaro(){
     document.getElementById("b-progress4").classList.toggle("progress2")
     document.getElementById("b-progress5").classList.toggle("progress2")
 
-    document.getElementById("d-proyectos").classList.toggle("bg-gray-300")
+    document.getElementById("d-proyectos").classList.toggle("bg-gray-200")
     document.getElementById("d-proyectos").classList.toggle("text-black")
+
+    document.getElementById("hr1").classList.toggle("border-black")
+    document.getElementById("hr2").classList.toggle("border-black")
 }
